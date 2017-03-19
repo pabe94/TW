@@ -1,5 +1,4 @@
  <!DOCTYPE html>
- <!DOCTYPE html>
 <!-- 
 		Tecnologias Web
 		Grado en Ingeniería Informática
@@ -18,63 +17,126 @@
 		elementos de HTML5 para definir las distintas secciones de la página (
 		header, footer, article, etc.). A continuación se reproduce en texto plano el contenido de la página así como el logotipo del sitio para que pueda reproducirlo en el ejercicio.
 -->		
+
 <html>
+
 <!-- Head de la pagina -->
 <head>
 <meta charset="UTF-8">
 <meta author="Pablo Martinez Ruano">
 <title>Microsiervos</title>
 </head>
+<!-- Fin del Head -->
 
-
+<!-- Principio del Body -->
 <body>
-<h1 style="color:#0000FF">Microsiervos</h1>
-<hr>
-<!-- Pienso que el menu deberia hacerse de esta manera mejor, es como lo tienen las paginas implementadas pero 
-	 como pide copia de la pagina la descarto.	 
-<ul>
-	<li> <a href="">Portada</a> </li> <li> Buscar</li>
-</ul>
--->
-<p> <a href="">Portada</a> <a href="">Buscar</a> <a href="">Contactar</a> <a href="">Humor</a> <a href="">¡Salta!</a> </p>
-<article>
-<h2>Ron Rivest, criptógrafo y la R de RSA, explica el número del reto RSA-129</h2>
-<p> Ron Rivest es persona la cual siempre es agradable</p>
-</article>
-</body>
 
+	<!-- Principio del Header -->
+	<header>
+		<img src="img/logo_microsiervos.png" alt="Logo Microsiervos">
+		<hr>	
+	</header>
+	<!-- Fin del Header -->
 
-Microsiervos
-Portada Buscar Contactar Humor¡Salta!
-Ciencia
-Ron Rivest, criptógrafo y la «R» de RSA, explica el número del reto RSA-129
-Por @Alvy — 2 de Febrero de 2017
-Ron Rivest en persona –lo cual siempre es agradable– explica en este vídeo de Numberphile unas cuantas cosas sobre el RSA-129, un 
-número de 129 dígitos decimales (y 426 bits) que usaron como un reto criptográfico que tardó 17 años en resolverse.
-Seguir leyendo ...
-Ciencia
-La ciencia quiere preparar cerveza en la Luna y a todos nos parece fetén
-Por Nacho Palou — 2 de Febrero de 2017
-En The Telegraph, Scientists brewing up plan to make beer on the Moon,
-"Investigadores de la universidad de California están diseñado un recipiente para fermentar cerveza en la Luna que esperan sea 
-transportada por una nave espacial India que despegará a finales de este año. El objetivo es estudiar cómo se comporta la levadura en 
-condiciones lunares, una cuestión importante de cara a desarrollar allí productos farmacéuticos y alimentos que contengan levadura, 
-como el pan."
-Seguir leyendo ...
-Ordenadores
-El servidor de internet que lleva funcionando ininterrumpidamente desde 1993
-Por Nacho Palou — 2 de Febrero de 2017
-En Computerworld, Booted up in 1993, this server still runs -- but not for much longer,
-"En 1993 Bill Clinton cumplía su primer año como presidente, se lanzaron Windows NT 3.1 y Parque Jurásico y Phil Hogan, arquitecto IT, 
-encendió un servidor tolerante a fallos de Stratus Technologies. Muchas cosas han cambiado desde entonces, en 24 años, salvo una: el 
-servidor que encendió Phil Hogan sigue funcionando."
-Seguir leyendo ...
-Economía Digital
-El tren supersónico Hyperloop llega a Europa
-Los ciberataques han aumentado un 130% en el 2016
-Las pérdidas millonarias de Toshiba derriban a su presidente
-Delta comprará el 49% de Aeroméxico en agosto
-American Airlines destierra las pantallas individuales en los asientos de sus aviones
-Microsiervos
-Acerca de Microsiervos Aviso legal Contactar Anunciarse en Microsiervos
+	<!-- Principio del menu de navegador -->
+	<nav>
+		<!-- Pienso que el menu deberia hacerse de esta manera mejor, es como lo tienen las paginas implementadas pero como pide copia de la pagina la descarto.	 
+		<ul>
+			<li> <a href="Portada">Portada</a>
+			<li> <a href="Buscar">Buscar</a>
+			<li> <a href="Contactar">Contactar</a>
+			<li> <a href="Humor">Humor</a>
+			<li> <a href="¡Salta!">¡Salta!</a>
+		</ul>
+		-->
+		<p> <a href="">Portada</a> 
+			<a href="Buscar">Buscar</a> 
+			<a href="Contactar">Contactar</a> 
+			<a href="Humor">Humor</a> 
+			<a href="¡Salta!">¡Salta!</a> 
+		</p>
+	</nav>
+	<!-- Fin del menu de navegador -->
+
+	<div id="Contenido">
+		<section id="main">
+			<article id="Ron Rivest">
+				<a href="Ciencia"> Ciencia</a>
+				<h1> <a href="Ron Rivest">Ron Rivest, criptógrafo y la R de RSA, explica el número del reto RSA-129</a> </h1>
+				<p>Por <a href="Alvy">@Alvy</a> — <time>2 de Febrero de 2017</time></p>
+				<p> Ron Rivest en persona –lo cual siempre es agradable– explica en este vídeo de Numberphile unas cuantas cosas sobre el RSA-129, un número de 129 dígitos decimales (y 426 bits) que usaron como un reto criptográfico que tardó 17 años en resolverse.</p>
+				<a href="Seguir Leyendo"> Seguir leyendo</a>
+			</article>
+
+			<br>
+
+			<article id="Cerveza en la Luna">
+				<a href="Ciencia"> Ciencia </a>
+				<h1> <a href="Cerveza en la Luna">La ciencia quiere preparar cerveza en la Luna y a todos nos parece fetén</a></h1>
+				<p>Por <a href="Nacho Palou"> Nacho Palou</a> — <time>2 de Febrero de 2017</time></p>
+				<p>En The Telegraph, Scientists brewing up plan to make beer on the Moon,"Investigadores de la universidad de California están diseñado un recipiente para fermentar cerveza en la Luna que esperan sea transportada por una nave espacial India que despegará a finales de este año. El objetivo es estudiar cómo se comporta la levadura en condiciones lunares, una cuestión importante de cara a desarrollar allí productos farmacéuticos y alimentos que contengan levadura, como el pan."</p>
+				<a href="Seguir Leyendo"> Seguir leyendo</a>
+			</article>
+
+			<br>
+
+			<article id="Servidor funcionando 1993">
+				<a href="Ordenadores"> Ciencia </a>
+				<h1> <a href="Cerveza en la Luna">El servidor de internet que lleva funcionando ininterrumpidamente desde 1993</a></h1>
+				<p>Por <a href="Nacho Palou"> Nacho Palou</a> — <time>2 de Febrero de 2017</time></p>
+				<p>"En 1993 Bill Clinton cumplía su primer año como presidente, se lanzaron Windows NT 3.1 y Parque Jurásico y Phil Hogan, arquitecto IT, encendió un servidor tolerante a fallos de Stratus Technologies. Muchas cosas han cambiado desde entonces, en 24 años, salvo una: el servidor que encendió Phil Hogan sigue funcionando."</p>
+				<a href="Seguir Leyendo"> Seguir leyendo</a>
+			</article>			
+		</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<aside>
+			<img src="img/logo_ed.png" alt="Logo ED economia digital">
+			<article id="">
+				<a href="El tren supersónico">El tren supersónico Hyperloop llega a Europa</a>
+			</article>
+			<article id="Ciberataque">
+				<a href="Ciberataque">Los ciberataques han aumentado un 130% en el 2016</a>
+			</article>
+			<article id="pérdidas millonarias de Toshiba">
+				<a href="pérdidas millonarias de Toshiba">Las pérdidas millonarias de Toshiba derriban a su presidente</a>
+			</article>
+			<article id="Delta comprará el 49% de Aeroméxico en agosto<">
+				<a href="Delta comprará el 49% de Aeroméxico en agosto<">Delta comprará el 49% de Aeroméxico en agosto</a>
+				<article id="American Airlines ">
+				<a href="American Airlines ">American Airlines destierra las pantallas individuales en los asientos de sus aviones</a>
+			</article>			
+		</aside>
+	</div>
+
+	<br>
+	<br>
+
+	<div id="footer">
+		<footer>
+			<img src="img/logo_microsiervos.png" alt="Logo Microsiervos" width="150">
+			<!-- Pienso que el menu deberia hacerse de esta manera mejor, es como lo tienen las paginas implementadas pero como pide copia de la pagina la descarto.	 
+			<ul>
+				<li> <a href="Acerca de Microsiervos">Acerca de Microsiervos</a></li>
+				<li> <a href="Buscar">Buscar</a></li> 
+				<li> <a href="Aviso legal">Aviso legal</a></li>
+				<li> <a href="Contactar">Contactar</a></li>
+				<li> <a href="Anunciarse en Microsiervos">Anunciarse en Microsiervos</a></li>
+			</ul>
+			-->
+			<p> <a href="Acerca de Microsiervos">Acerca de Microsiervos</a> 
+				<a href="Aviso legal">Aviso legal</a> 
+				<a href="Contactar">Contactar</a> 
+				<a href="Humor">Anunciarse en Microsiervos</a> 
+			</p>	
+		</footer>
+
+	</div>
+	</body>
+	<!-- Fin del Body -->
+
 </html> 
