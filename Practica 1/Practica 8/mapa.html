@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+		Tecnologias Web
+		Grado en Ingeniería Informática
+		Curso 2016-2017
+		Profesor: Javier Martínez Baena
+		Práctica 1 
+		Ejercicio 8
+		Realizado por: Pablo Martínez Ruano
+
+		Implemente una página web que muestre al usuario una imagen con un mapa de Estados Unidos 
+		(descargar desde la página de la asignatura) y que permita que cuando el usuario pulse sobre un 
+		estado muestre información sobre el mismo (por ejemplo enlazando a una página de Wikipedia 
+		con información relacionada). Además, dispone de una zona específica que le permitirá saltar a 
+		una página con un mapa de Europa
+-->		
+
+<html>
+
+<!-- Head de la pagina -->
+<head>
+	<meta charset="UTF-8">
+	<meta author="Pablo Martinez Ruano">
+	<title>Tabla de Docencia</title>
+	<style type="text/css">
+        td, th { border: 1px solid #CCC; }
+        table {border: 1px solid black; }
+    </style>
+</head>
+<!-- Fin del Head -->
+
+<!-- Principio del Body -->
+<body>
+
+		<!-- Principio del Header -->
+		<header>
+			<h1>Mapa USA</h1>
+		</header>
+		<!-- Fin del Header -->
+
+		<!-- Principio del nav -->
+		<!-- Fin del nav -->
+
+		<div id="Contenido">
+			<section id="Main">
+				<img src="img/mapa_usa.jpg" alt="EEUU" usemap="#map">
+
+				<map name="map">
+				  <area shape="rect" coords="441,453,645,594" href="https://es.wikipedia.org/wiki/Colorado" alt="Colorado">
+				  <area shape="circle" coords="1150,960,80" href="https://es.wikipedia.org/wiki/Europa" alt="Europa">
+				  <area shape="poly" coords="135,396,301,411,286,627,280,621,267,622,265,669,120,507" href="https://es.wikipedia.org/wiki/Nevada" alt="Nevada">
+				</map>
+			</section>
+		</div>
+</body>
+</html>			
