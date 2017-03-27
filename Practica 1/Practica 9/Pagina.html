@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+		Tecnologias Web
+		Grado en Ingeniería Informática
+		Curso 2016-2017
+		Profesor: Javier Martínez Baena
+		Práctica 1 
+		Ejercicio 8
+		Realizado por: Pablo Martínez Ruano
+
+		Implemente una página web que muestre al usuario una imagen con un mapa de Estados Unidos 
+		(descargar desde la página de la asignatura) y que permita que cuando el usuario pulse sobre un 
+		estado muestre información sobre el mismo (por ejemplo enlazando a una página de Wikipedia 
+		con información relacionada). Además, dispone de una zona específica que le permitirá saltar a 
+		una página con un mapa de Europa
+-->		
+
+<html>
+
+<!-- Head de la pagina -->
+<head>
+	<meta charset="UTF-8">
+	<meta author="Pablo Martinez Ruano">
+	<title>Tabla de Docencia</title>
+	<style type="text/css">
+        td, th { border: 1px solid #CCC; }
+        table {border: 1px solid black; }
+    </style>
+</head>
+<!-- Fin del Head -->
+
+<!-- Principio del Body -->
+<body>
+
+		<!-- Principio del Header -->
+		<header>
+			<h1>Paginas dentro de paginas</h1>
+		</header>
+		<!-- Fin del Header -->
+
+		<!-- Principio del nav -->
+		<!-- Fin del nav -->
+
+		<div id="Contenido">
+			<section id="Main">
+				 <iframe src="https://es.wikipedia.org/wiki/Alemania"></iframe> 
+				 <iframe src="https://es.wikipedia.org/wiki/Espa%C3%B1a"></iframe> 
+			</section>	 
+			<section id="ETSIIT">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2121.1556861185313!2d-3.6248098719223747!3d37.196842330691844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps+ETSIIT!5e0!3m2!1ses!2ses!4v1490649041568" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				 <iframe width="420" height="315" src="https://www.youtube.com/embed/s_wgvTypRN8"></iframe> 
+			</section>
+		</div>
+</body>
+</html>
+				 
