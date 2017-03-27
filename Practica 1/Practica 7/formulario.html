@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- 
+		Tecnologias Web
+		Grado en Ingeniería Informática
+		Curso 2016-2017
+		Profesor: Javier Martínez Baena
+		Práctica 1 
+		Ejercicio 7
+		Realizado por: Pablo Martínez Ruano
+
+		Una empresa editorial (EDITODO) dispone de un amplio catálogo de revistas clasificadas en las 
+		siguientes áreas temáticas:
+			•Divulgación
+			•Gastronomía
+			•Motor
+			•Viajes
+		La editorial necesita incluir en su página web un formulario HTML para suscribirse a una 
+		publicación concreta del área de divulgación, en la que disponemos de las siguientes revistas:
+			•Sabelotodo
+			•Solo sé que no sé nada
+			•Muy interesado
+			•Ciencia con sabor
+		El formulario debe pedir la siguiente información:
+			•Información personal:
+				◦Nombre
+				◦Apellidos
+				◦Dirección postal
+				◦Fecha de nacimiento
+				◦Teléfono
+				◦Email
+				◦Número de CC
+			•Información sobre la suscripción:
+				◦Revista seleccionada
+				◦Anual / bianual
+				◦Modo de pago: Paypal / VISA / Reembolso
+			•Otra información:
+				◦Otros temas de interés
+				◦Si acepta o no el envío de publicidad por email
+		Aspectos a considerar:
+			•Use fieldset/legend para agrupar las distintas temáticas del formulario
+			•La revista deberá elegirse entre las disponibles del área de divulgación (botones de tipo 
+			radio)
+			•Los temas de interés serán las áreas de la editorial y se pueden marcar 0 o más (botones 
+			de tipo checkbox).
+		Observaciones:
+			•Recuerde que si no se indica el atributo value en los botones de tipo radio o checkbox, 
+			simplemente se transmitirá si hay una marca o no hay una marca, pero no podrá saber qué
+			marca se pulsó.
+			•En el caso de los botones de tipo checkbox, el atributo name debe tener un nombre acabado en [] para que se envíe un array con todas las marcas. Si no se hace así se transmitirá solo una de ellas.
+			A continuación dispone de un programa PHP que le permitirá comprobar si la información que está
+			enviando con su formulario es correcta o no. Este programa se limita a mostrar el nombre y el 
+			valor de todas las variables que recibe (tanto por el método GET como por el método POST). Es 
+			particularmente interesante que compruebe cómo se recibe la información relativa a los botones 
+			de tipo checkbox.
+-->		
+
+<html>
+
+<!-- Head de la pagina -->
+<head>
+	<meta charset="UTF-8">
+	<meta author="Pablo Martinez Ruano">
+	<title>Tabla de Docencia</title>
+	<style type="text/css">
+        td, th { border: 1px solid #CCC; }
+        table {border: 1px solid black; }
+    </style>
+</head>
+<!-- Fin del Head -->
+
+<!-- Principio del Body -->
+<body>
+
+		<!-- Principio del Header -->
+		<header>
+			<h1>Formulario</h1>
+		</header>
+		<!-- Fin del Header -->
+
+		<!-- Principio del nav -->
+		<!-- Fin del nav -->
+		<div id="Contenido">
+			<form action="procesar.php" method="get">
+				<fieldset>
+					<legend>Información personal</legend>
+						<label>Nombre:<br>
+						<input type="text" name="nombre"></label><br>  
+						<label>Apellidos:<br>
+						<input type="text" name="apellidos"></label><br>
+						<label>Dirección Postal:<br>
+						<input type="text" name="nombre"></label><br>
+						<label>Fecha nacimiento:<br>
+						<input type="date" name="nombre"></label><br>
+						<label>Telefono:<br>
+						<input type="tel" name="nombre"></label><br>
+						<label>Email:<br>
+						<input type="email" name="nombre"></label><br>
+						<label>Número de CC:<br>
+						<input type="number" name="nombre"></label><br>
+				</fieldset>
+
+				<fieldset>
+					<legend>Información de la suscripción</legend>
+					Seleccione revistas:<br>
+					<label> revista<input type="checkbox" name="Gustan" value="Revista1"></label>
+					<label> revista 2<input type="checkbox" name="Gustan[]" value="Revista2"></label>
+					<label> revista3<input type="checkbox" name="Gustan[]" value="Revista3"></label>
+					<label> revista4<input type="checkbox" name="Gustan[]" value="Revista4"></label>
+				</fieldset>
+
+			</form>
+			
+		</div>
+
+</body>
+</html>
